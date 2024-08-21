@@ -15,7 +15,7 @@ export default function Overview(){
     return(
         <>
         <div className="flex justify-evenly ">
-            <div className="bg-[#3273db] sm:h-[80vh]  relative sm:top-24 sm:w-[18vw] sm:rounded-[30px] h-[99vh]  w-[100vw] rounded-3xl ">
+            <div className="bg-[#3273db] sm:h-[80vh]  relative sm:top-24 sm:w-[18vw] sm:rounded-[30px] h-[100vh]  w-[100vw] rounded-3xl ">
                 <div>
                     <div className="flex justify-between px-5 py-2">
                         <p className="text-white text-[13px]  pl-2">9:41</p>
@@ -39,42 +39,42 @@ export default function Overview(){
                     <ul className="flex justify-between pt-4">
                         <li className="text-black sm:text-[13px] text-[16px] font-semibold bg-white rounded-full p-1 px-3 sm:px-5 ml-3">Dashboard</li>
                         <li className="text-white sm:text-[13px] text-[16px] font-semibold">Cards</li>
-                        <li className="text-white sm:text-[13px] text-[16px] font-semibold">Analytics</li>
+                        <Link to="/payment"><li className="text-white sm:text-[13px] text-[16px] font-semibold">Analytics</li></Link>
                         <li className="text-white sm:text-[13px] text-[16px] font-semibold">Rec</li>
                     </ul>
-                    <div className="text-white text-center sm:pt-5 sm:mb-5 pt-8 mb-8">
-                        <h1 className="sm:text-lg text-xl sm:leading-none leading-loose">Balance</h1>
-                        <h1 className="sm:text-4xl text-6xl font-bold mb-14 sm:mb-0">$365,500</h1>
+                    <div className="text-white text-center sm:pt-5 sm:mb-5 pt-1 mb-1">
+                        <h1 className="sm:text-lg text-sm sm:leading-none leading-loose">Balance</h1>
+                        <h1 className="sm:text-4xl text-2xl font-bold mb-5 sm:mb-0">$365,500</h1>
                     </div>
                     <div className="bg-[#070f2e] sm:h-[46vh] h-[64vh] sm:rounded-b-[30px] rounded-t-2xl rounded-3xl ">
-                        <div className="flex justify-between items-center sm:p-2  py-4 px-4 ">
-                            <h1 className="text-lg">🎉<span className="text-white sm:text-xs text-md pl-1 ">You have saved $10 in the last 10 days</span></h1>
+                        <div className="flex justify-between items-center sm:p-2  py-2 px-2 ">
+                            <h1 className="text-lg">🎉<span className="text-white sm:text-xs text-sm pl-1 ">You have saved $10 in the last 10 days</span></h1>
                             <IoIosArrowForward className="text-white"/>
                         </div>
-                        <div className="bg-slate-200 sm:h-[45vh] h-[556px] rounded-b-[30px] rounded-t-xl">
+                        <div className="bg-slate-200 sm:h-[45vh] h-[61.8vh] rounded-b-3xl rounded-t-xl">
                             <div className="px-2">
                                 <div className="pt-3">
-                                    <hr className="border-slate-200 border-t-4 sm:mx-28 mx-44 rounded-md"/>
+                                    <hr className="border-white border-t-4 sm:mx-28 mx-36 rounded-md"/>
                                 </div>
                                 
-                                <h1 className="text-[#070f2e] font-bold p-3 py-2 sm:py-0 text-xl sm:text-base">Recent Send</h1>
+                                <h1 className="text-[#070f2e] font-bold pl-3 sm:p-3 sm:py-0 text-xl sm:text-base">Recent Send</h1>
                             </div>
-                            <ul className="flex justify-evenly my-5 sm:my-0">
+                            <ul className="flex justify-evenly my-2 sm:my-2">
                                 <li><img src="https://www.gravatar.com/avatar/e8bb2833b097f4fdd0029598193c820d?s=64&d=identicon&r=PG" className="rounded-full sm:h-9 h-13"/><h1 className="sm:text-xs text-md text-center">Agneys</h1></li>
                                 <li><img src="https://www.gravatar.com/avatar/e8bb2833b097f4fdd0029598193c820d?s=64&d=identicon&r=PG" className="rounded-full sm:h-9 h-13"/><h1 className="sm:text-xs text-md text-center">Isyana</h1></li>
                                 <li><img src="https://www.gravatar.com/avatar/e8bb2833b097f4fdd0029598193c820d?s=64&d=identicon&r=PG" className="rounded-full sm:h-9 h-13"/><h1 className="sm:text-xs text-md text-center">Nurdin</h1></li>
                                 <li><img src="https://www.gravatar.com/avatar/e8bb2833b097f4fdd0029598193c820d?s=64&d=identicon&r=PG" className="rounded-full sm:h-9 h-13"/><h1 className="sm:text-xs text-md text-center">Budi</h1></li>
                                 <li><img src="https://www.gravatar.com/avatar/e8bb2833b097f4fdd0029598193c820d?s=64&d=identicon&r=PG" className="rounded-full sm:h-9 h-13"/><h1 className="sm:text-xs text-md text-center">Broto</h1></li>
                             </ul>
-                            <h1 className="text-[#070f2e] font-bold px-3 pt-2 text-2xl">Current Activity</h1>
-                            <div className="flex justify-evenly items-center mt-5">
+                            <h1 className="text-[#070f2e] font-bold px-3  text-2xl">Current Activity</h1>
+                            <div className="flex justify-evenly items-center my-2 sm:my-0">
                                 <div className="border-slate-300 border-2 sm:w-56 w-80 sm:h-8 h-12 rounded-3xl my-2 ml-3 pl-2 pt-2 flex place-items-center py-2">
                                     <h1 ><FaSearch /></h1>
                                     <h1 className="font-extralight sm:text-xs text-lg pl-3">Search Transaction</h1>
                                 </div>
                                 <CiFilter className="sm:text-xl text-3xl"/>
                             </div>
-                            <div className="flex justify-evenly items-center sm:mt-4 mt-10 mb-6">
+                            <div className="flex justify-evenly items-center sm:mt-4 mb-6">
                                 <FaCirclePlus className="sm:text-3xl text-5xl"/>
                                 <div>
                                     <h1 className="font-bold sm:text-xs text-lg">Davis Vetrovs</h1>
@@ -96,11 +96,11 @@ export default function Overview(){
                                     <p className="text-gray-600 font-semibold  sm:text-xs text-sm  pl-10 sm:pl-8">Transfer Out</p>
                                 </div>
                             </div>
-                            <hr className="border-black border-t-4 mx-36 mt-5  rounded-md "/>
-                            <div className="bg-[#3273db] flex items-center justify-between sm:w-40 w-48 sm:h-9 h-11 rounded-3xl sm:p-1 p-2 relative sm:bottom-20 bottom-24 mx-auto">
+                            <hr className="border-black border-t-4 mx-36 mt-5 sm:mx-24 rounded-md "/>
+                            <div className="bg-[#3273db] flex items-center justify-between sm:w-40 w-48 sm:h-9 h-11 rounded-3xl sm:p-1 p-2  sm:bottom-20 bottom-24 mx-auto fixed">
                                 <SiGooglelens className="text-white"/>
                                 <h1 className="text-white">New Payment</h1>
-                                <Link to="/payment"><FaPlus  className="text-white"/></Link>
+                                <FaPlus  className="text-white"/>
                                 
                             </div>
                             

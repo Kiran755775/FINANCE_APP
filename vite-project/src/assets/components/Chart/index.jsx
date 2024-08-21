@@ -71,7 +71,7 @@ const Chart = () => {
     </ResponsiveContainer>
     </div>
     <div className='sm:hidden'>
-        <ResponsiveContainer width="100%" height={300} >
+        <ResponsiveContainer width="100%" height={200} >
       <BarChart
         data={data}
         margin={{ top: 5, right:10 }}
@@ -97,11 +97,11 @@ const Chart = () => {
           tickLine={false}
         />
         <Legend
-          wrapperStyle={{ padding: 30 }}
+          
           iconType='circle'
         />
-        <Bar dataKey="earned" name="Earned" fill="#174691" barSize={20} />
-        <Bar dataKey="spent" name="Spent" fill="#ffffff" barSize={20} />
+        <Bar dataKey="earned" name="Earned" fill="#174691" barSize={10} />
+        <Bar dataKey="spent" name="Spent" fill="#ffffff" barSize={10} />
       </BarChart>
     </ResponsiveContainer>
     </div>

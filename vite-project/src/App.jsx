@@ -9,13 +9,16 @@ function App() {
 
   return (
     <>
-     <Router>
+    <div className="h-[100vh]">
+    <Router>
       <Routes>
         <Route path="/"  element={<Home/>}/>
         <Route path="/overview"  element={<Overview/>}/>
         <Route path="/payment"  element={<Payment/>}/>
       </Routes>
       </Router>
+    </div>
+     
     </>
   )
 }

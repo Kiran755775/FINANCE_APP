@@ -48,7 +48,7 @@ export default function Payment(){
         <div className="flex justify-evenly  ">
 
         
-            <div className="bg-[#3273db] sm:h-[80vh]  relative sm:top-24 sm:w-[18vw] sm:rounded-[30px]  w-[100vw] rounded-3xl">
+            <div className="bg-[#3273db] sm:h-[80vh]  relative sm:top-24 sm:w-[18vw] sm:rounded-[30px]  w-[100vw] rounded-3xl h-[100vh]">
                 <div>
                     <div className="flex justify-between px-5 sm:px-2 py-2">
                         <p className="text-white text-[13px]  pl-2">9:41</p>
@@ -75,12 +75,12 @@ export default function Payment(){
                         <li className="text-black sm:text-[13px] text-[16px] font-semibold bg-white rounded-full p-1 px-5 sm:px-5 ml-3">Analytics</li>
                         <li className="text-white sm:text-[13px] text-[16px] font-semibold pr-3">Reccuring</li>
                     </ul>
-                    <div className="flex justify-between px-3 sm:px-2 py-10 sm:py-2 items-center">
-                        <p className="text-white sm:text-xs">Spending by</p>
-                        <h1 className="text-white text-3xl font-bold sm:text-lg ">Monthly <span className="inline-flex"><MdKeyboardArrowDown /></span></h1>
+                    <div className="flex justify-between px-3 sm:px-2 py-2 sm:py-2 items-center">
+                        <p className="text-white text-sm sm:text-xs">Spending by</p>
+                        <h1 className="text-white text-xl font-bold sm:text-lg ">Monthly <span className="inline-flex"><MdKeyboardArrowDown /></span></h1>
                     </div>
                     <Chart className="mx-auto"/>
-                    <div className="bg-[#0b1a33] h-20 sm:h-14 sm:mx-2 mx-5 rounded-2xl flex justify-between items-center p-3">
+                    <div className="bg-[#0b1a33] h-15 sm:h-14 sm:mx-2 mx-5 rounded-2xl flex justify-between items-center p-3 mt-2">
                         <div className="flex justify-start items-center ml-2">
                             <h1 className="text-xl">🎯</h1>
                             <div className="pl-2">
@@ -91,12 +91,12 @@ export default function Payment(){
                         
                             <FaPlus className="text-white text-xl"/>
                     </div>
-                    <div className="bg-slate-200 shadow-sm h-62 w-full mt-4 rounded-b-3xl">
-                        <div className="pt-5 sm:pt-2">
-                                    <hr className="border-slate-200 border-t-4 sm:mx-28 mx-44 rounded-md"/>
+                    <div className="bg-slate-200 shadow-sm h-[30.6vh] sm:h-[26vh] w-full mt-2 sm:mt-4 rounded-b-3xl rounded-t-3xl">
+                        <div className="pt-3 sm:pt-2">
+                                    <hr className="border-white border-t-4 sm:mx-28 mx-36 rounded-md"/>
                         </div>
-                        <h1 className="text-2xl sm:text-lg font-sans font-semibold pl-3">Bills Due</h1>
-                        <div className="flex  justify-evenly  mt-5 sm:mt-2">
+                        <h1 className="text-xl sm:text-lg font-sans font-semibold pl-5 sm:pl-3 ">Bills Due</h1>
+                        <div className="flex  justify-evenly  mt-2 sm:mt-2">
                             <div className="border-white border-2 w-[25vw] sm:w-[75px] p-3 sm:p-2 rounded-2xl h-[20vh] sm:h-[15vh] items-center">
                                     <p className="text-gray-500 leading-loose sm:text-xs">13th Aug</p>
                                     <BiLogoFigma className="text-3xl ml-2 sm:text-xl"/>
@@ -109,14 +109,14 @@ export default function Payment(){
                                 <h1 className="font-semibold">Figma</h1>
                                 <p className="text-gray-500 sm:text-xs">$11:00</p>
                             </div>
-                            <div className="border-white border-2 w-[25vw] sm:w-[75px] p-3 sm:p-1 rounded-2xl h-[20vh] sm:h-[15vh] flex flex-col justify-center items-center">
+                            <div className="border-white border-2 w-[25vw] sm:w-[75px]  sm:p-1 rounded-2xl h-[20vh] sm:h-[15vh] flex flex-col justify-center items-center">
                                 <BiPlusCircle className="text-3xl ml-2"/>
-                                <h1 className="font-semibold sm:text-sm">Add a Bill</h1>
+                                <h1 className="font-semibold sm:text-sm text-center">Add a Bill</h1>
                                 
                             </div>
                         </div>
                         
-                        <hr className="border-black border-t-4 mx-36 mt-10 sm:mt-0  rounded-md "/>
+                        <hr className="border-black border-t-4 mx-36 sm:mx-24 mt-2 sm:mt-5  rounded-md "/>
                     </div>
                 </div>
                     
