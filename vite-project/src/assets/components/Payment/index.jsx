@@ -91,25 +91,25 @@ export default function Payment(){
                         
                             <FaPlus className="text-white text-xl"/>
                     </div>
-                    <div className="bg-white shadow-sm h-62 w-full mt-4 ">
+                    <div className="bg-slate-200 shadow-sm h-62 w-full mt-4 rounded-b-3xl">
                         <div className="pt-5 sm:pt-2">
                                     <hr className="border-slate-200 border-t-4 sm:mx-28 mx-44 rounded-md"/>
                         </div>
                         <h1 className="text-2xl sm:text-lg font-sans font-semibold pl-3">Bills Due</h1>
                         <div className="flex  justify-evenly  mt-5 sm:mt-2">
-                            <div className="border-slate-200 border-2 w-[25vw] sm:w-[75px] p-3 sm:p-2 rounded-2xl h-[20vh] sm:h-[15vh] items-center">
+                            <div className="border-white border-2 w-[25vw] sm:w-[75px] p-3 sm:p-2 rounded-2xl h-[20vh] sm:h-[15vh] items-center">
                                     <p className="text-gray-500 leading-loose sm:text-xs">13th Aug</p>
                                     <BiLogoFigma className="text-3xl ml-2 sm:text-xl"/>
                                     <h1 className="font-semibold">Figma</h1>
                                     <p className="text-gray-500 sm:text-xs">$55:00</p>
                             </div>
-                            <div className="border-slate-200 border-2 w-[25vw] sm:w-[75px] p-3 sm:p-2 rounded-2xl h-[20vh] sm:h-[15vh] items-center">
+                            <div className="border-white border-2 w-[25vw] sm:w-[75px] p-3 sm:p-2 rounded-2xl h-[20vh] sm:h-[15vh] items-center">
                                 <p className="text-gray-500 leading-relaxed sm:text-xs">15th Aug</p>
                                 <FiGithub  className="text-3xl ml-2 sm:text-xl"/>
                                 <h1 className="font-semibold">Figma</h1>
                                 <p className="text-gray-500 sm:text-xs">$11:00</p>
                             </div>
-                            <div className="border-slate-200 border-2 w-[25vw] sm:w-[75px] p-3 sm:p-1 rounded-2xl h-[20vh] sm:h-[15vh] flex flex-col justify-center items-center">
+                            <div className="border-white border-2 w-[25vw] sm:w-[75px] p-3 sm:p-1 rounded-2xl h-[20vh] sm:h-[15vh] flex flex-col justify-center items-center">
                                 <BiPlusCircle className="text-3xl ml-2"/>
                                 <h1 className="font-semibold sm:text-sm">Add a Bill</h1>
                                 
