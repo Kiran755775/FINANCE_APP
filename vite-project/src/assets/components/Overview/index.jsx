@@ -57,7 +57,7 @@ export default function Overview(){
                     </div> 
                     <ul className="flex justify-between pt-4 ">
                         {featuresList.map((eachItem) => (
-                            <li className={`text-white sm:text-[13px] text-[16px] font-semibold cursor-pointer rounded-2xl p-1  ${eachItem.id === selectId ? 'bg-white' : ''} ${eachItem.id === selectId ? 'text-black' : ''}`}key={eachItem.id} onClick={()=>setSelectId(eachItem.id)}>
+                            <li className={`text-white sm:text-[13px] text-[16px] font-semibold cursor-pointer rounded-2xl p-1   ${eachItem.id === selectId ? 'bg-white' : ''}  ${eachItem.id === selectId ? 'text-yellow-800' : ''} `} key={eachItem.id} onClick={()=>setSelectId(eachItem.id)}>
                                 {eachItem.name}
                             </li>
                         ))}
