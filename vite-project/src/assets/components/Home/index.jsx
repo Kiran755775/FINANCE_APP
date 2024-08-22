@@ -24,7 +24,9 @@ export default function Home(){
                   
                     <h1 className="text-white sm:text-4xl text-5xl font-semibold   p-2 mb-5 sm:mb-0">Better Homes, Smarter, For Your Finance.</h1>
                     <div className="text-center mt-5 sm:mt-0">
-                    <Link to="/overview"><button className="text-center bg-white text-[17px] text-blue-950 w-11/12 h-14 sm:h-10 mx-auto  rounded-3xl my-1 font-semibold "> Lets Go! </button></Link>
+                    <Link to="/overview">
+                    <button className="text-center bg-white text-[17px] text-blue-950 w-11/12 h-14 sm:h-10 mx-auto  rounded-3xl my-1 font-semibold "> Lets Go! </button>
+                    </Link>
                     </div>
                         
                     <hr className="border-t-4 border-white sm:mx-20 mx-36 mt-10 rounded-sm"/>

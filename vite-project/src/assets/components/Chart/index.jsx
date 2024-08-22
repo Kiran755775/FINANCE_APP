@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {
   BarChart,
   Bar,
@@ -62,7 +62,7 @@ const Chart = () => {
           tickLine={false}
         />
         <Legend
-          wrapperStyle={{ padding: 2 }}
+          
           iconType='circle'
         />
         <Bar dataKey="earned" name="Earned" fill="#174691" barSize={20} />
