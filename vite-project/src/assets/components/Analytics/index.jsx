@@ -17,8 +17,8 @@ export default function Analytics(){
                     
                      
                   
-                    <div className="flex justify-between  sm:px-2 py-2 sm:py-2 items-center">
-                        <p className="text-white text-sm sm:text-xs">Spending by</p>
+                    <div className="flex justify-between  sm:px-2 py-2 sm:py-2 items-center px-2">
+                        <p className="text-white text-sm sm:text-xs pl-1">Spending by</p>
                         <h1 className="text-white text-xl font-bold sm:text-lg ">Monthly <span className="inline-flex"><MdKeyboardArrowDown /></span></h1>
                     </div>
                     <Chart />

@@ -16,7 +16,7 @@ export default function Payments(){
     const [inputValue,setInputValue]= useState("");
     const [inputTextValue,setInputTextValue]= useState("");
     const handleInputChange = (event) => {
-        setInputTextValue(event.target.value);
+        setInputTextValue((event.target.value).slice(0,10));
     };
 
     const handleButtonClick = (value) => {
@@ -25,13 +25,17 @@ export default function Payments(){
     const handleBackspace = () => {
             setInputValue(prev => prev.slice(0, -1)); 
         };
-    const [history,setHistory]= useState(JSON.parse(localStorage.getItem("transactionHistory")))
+    const [history,setHistory]= useState(JSON.parse(localStorage.getItem("transactionHistory"))||[])
     const sendButton=()=>{
+        if(inputTextValue!=="" && inputValue!==""){
+            const newTransaction= {inputTextValue,inputValue}
+            const updatedHistory = [...history, newTransaction];
+            setInputTextValue("")
+            setInputValue("")
+            setHistory(updatedHistory);
+            localStorage.setItem('transactionHistory', JSON.stringify(updatedHistory));
+        }
         
-        const newTransaction= {inputTextValue,inputValue}
-        const updatedHistory = [...history, newTransaction];
-        setHistory(updatedHistory);
-        localStorage.setItem('transactionHistory', JSON.stringify(updatedHistory));
     }
     return(
         <>
@@ -46,28 +50,29 @@ export default function Payments(){
                                 <FaBatteryFull className="text-white pr-0  text-md "/>
                             </div>
                         </div> 
-                        <div className="bg-white sm:h-[70vh]   sm:w-[17vw] sm:rounded-[30px] h-[94vh] mx-auto  w-[97vw] rounded-3xl relative">
+                        <div className="bg-white sm:h-[75vh]   sm:w-[17vw] sm:rounded-[30px]  h-[94vh] mx-auto  w-[97vw] rounded-3xl relative">
                             <div className="flex justify-between px-2 py-2">
                                 <Link to="/overview">
-                                    <IoIosArrowDropleft className="text-3xl cursor-pointer"/>
+                                    <IoIosArrowDropleft className="text-3xl sm:text-2xl cursor-pointer"/>
                                 </Link>
-                                <TbDots  className="text-3xl"/>
+                                <TbDots  className="text-3xl sm:text-2xl"/>
                             </div>
                             <div className="p-2">
                                 <p className="text-gray-500 font-semibold">Send To</p>
-                                <input type="text" className="focus:outline-none text-2xl font-semibold bg-slate-100 sm:w-full" ref={inputRef}  value={inputTextValue} onChange={handleInputChange}/>
+                                <input type="text" className="focus:outline-none text-2xl font-semibold  sm:w-full " ref={inputRef}  value={inputTextValue} onChange={handleInputChange} />
                                 <p className="text-gray-500 font-semibold">**4291</p>
                             </div>
-                            <div className="bg-slate-200 h-8 mx-auto rounded-3xl w-[95vw] flex justify-between px-3 place-items-center sm:w-full">
+                            <div className="flex justify-between px-2 items-center my-5 sm:my-3">
+                                <input type="text" className="focus:outline-none text-5xl sm:text-3xl  w-[60vw] sm:w-full  text-left" ref={inputRef}  value={inputValue}/>
+                                <p className="text-lg font-semibold">USD</p>
+                            </div>
+                            <div className="bg-[#edebeb] h-8 mx-auto  rounded-3xl w-[95vw] flex justify-between px-3 place-items-center sm:w-full">
                                 <p className="font-semibold text-sm">Notes</p>
                                 <p className="font-semibold text-sm">Add</p>
                             </div>
-                            <div className="flex justify-center items-center my-10">
-                                <input type="text" className="focus:outline-none text-4xl font-semibold w-[60vw] sm:w-full bg-slate-100 text-center" ref={inputRef}  value={inputValue}/>
-                                <p className="text-lg font-semibold">USD</p>
-                            </div>
                             
-                            <div className="grid grid-cols-3 gap-5 mt-5">
+                            
+                            <div className="grid grid-cols-3 gap-5 mt-5 sm:mt-2">
                                 <div className="row" style={{ display: 'contents' }}>
                                     <button className="cursor-pointer text-black text-3xl font-semibold" onClick={()=>handleButtonClick("1")}>1</button>
                                     <button className="cursor-pointer text-black text-3xl font-semibold" onClick={()=>handleButtonClick("2")}>2</button>
@@ -90,7 +95,7 @@ export default function Payments(){
                                     </button>
                                 </div>
                             </div>
-                            <button className="text-white bg-gray-800 w-full h-12 rounded-3xl mt-8" onClick={()=>sendButton()}>Send</button>
+                            <Link to="/overview"><button className="text-white bg-gray-800 sm:w-full w-[92vw] mx-auto h-12 sm:h-10 sm:ml-0 ml-3  rounded-3xl mt-8" onClick={()=>sendButton()}>Send</button></Link>
                             <hr className="absolute bottom-5 left-0 right-0 border-black border-t-4 mx-32 rounded-lg sm:mx-20" />
                         </div>
 
