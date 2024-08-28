@@ -35,7 +35,7 @@ export default function Analytics(){
                     </div>
                     <div className="bg-slate-200 shadow-sm h-[30.6vh] sm:h-[26vh] w-[100vw] sm:w-full mt-2 sm:mt-4 rounded-b-3xl rounded-t-3xl">
                         <div className="pt-3 sm:pt-2">
-                                    <hr className="border-white border-t-4 sm:mx-28 mx-36 rounded-md"/>
+                                    <hr className="border-white border-t-4 sm:mx-28 mx-40 rounded-md"/>
                         </div>
                         <h1 className="text-xl sm:text-lg font-sans font-semibold pl-5 sm:pl-3 ">Bills Due</h1>
                         <div className="flex  justify-evenly  mt-2 sm:mt-2">
@@ -57,7 +57,7 @@ export default function Analytics(){
                                 
                             </div>
                         </div>
-                        <hr className="border-black border-t-4 mx-36 sm:mx-24 mt-2 sm:mt-5  rounded-md "/>
+                        <hr className="border-black border-t-4 mx-28 sm:mx-24 mt-2 sm:mt-5  rounded-md "/>
                     </div>
                 </div>
                     
